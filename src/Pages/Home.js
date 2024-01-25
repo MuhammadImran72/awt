@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
 import Slider from "react-slick";
-import homebanner from "../assets/Home/homebannerimage.png";
 import ourmission from "../assets/Home/ourmission.png";
 import ourvisssion from "../assets/Home/ourvision.png";
 
@@ -10,10 +8,10 @@ import ournew2 from "../assets/Home/new3.png";
 import ournew3 from "../assets/Home/new4.png";
 
 import askarigeneralinsurancecompanylimited from "../assets/Home/AskariGeneralInsuranceCompanyLimitedmin.jpg";
-import askarilifeinsurancecompanylimited  from "../assets/Home/AskariLifeInsuranceCompanyLimited-min.jpg";
-import aWTinvestmentslimited from "../assets/Home/AWTInvestmentsLimitedmin.jpg"; 
-import askarirealstate  from "../assets/Home/AskariRealEstate-min.jpg";
-import bluelagoon from "../assets/Home/BlueLagoonandArmyWelfareMess-min.jpg"; 
+import askarilifeinsurancecompanylimited from "../assets/Home/AskariLifeInsuranceCompanyLimited-min.jpg";
+import aWTinvestmentslimited from "../assets/Home/AWTInvestmentsLimitedmin.jpg";
+import askarirealstate from "../assets/Home/AskariRealEstate-min.jpg";
+import bluelagoon from "../assets/Home/BlueLagoonandArmyWelfareMess-min.jpg";
 import askarifarmSeeds from "../assets/Home/AskariFarmsandSeeds-min.jpg";
 import askarifuel from "../assets/Home/AskariFuelsmin.jpg";
 import armywelfaresugarmills from "../assets/Home/armywelfaresugarmills-min.jpg";
@@ -28,33 +26,33 @@ import faujisecurity from "../assets/Home/FaujiSecurityServicesPvtLtdmin.jpg";
 import askaridevelopment from "../assets/Home/AskariDevelopmentHoldingsPvtltd-min.jpg";
 import jolidays from "../assets/Home/Jolidays-min.jpg";
 import { Link } from "react-router-dom";
-import {  useState } from 'react';
 
-import CounterBox  from "../Components/CounterBox.js";
+import CounterBox from "../Components/CounterBox.js";
+import HeaderSlider from "../Components/HeaderSlider.jsx";
+import NewsSlider from "../Components/NewsSlider.jsx";
+
 const Home = () => {
-
-
   const counters = [
     {
-      icon: 'fa-thumbs-o-up',
-      value: '4 B ',
-      label: 'Well Above 40 Billion Rupees Worth company ',
+      icon: "fa-thumbs-o-up",
+      value: "40 Billion",
+      label: "Well Above 40 Billion Rupees Worth company ",
       colored: true,
     },
     {
-      icon: 'fa-group',
-      value: '28000',
-      label: 'Providing 28000 Direct & Indirect Employments',
+      icon: "fa-group",
+      value: "28,000",
+      label: "Providing 28,000 Direct & Indirect Employments",
     },
     {
-      icon: 'fa-shopping-cart',
-      value: '20',
-      label: '20 Companies And Still Growing',
+      icon: "fa-shopping-cart",
+      value: "20 Companies",
+      label: "20 Companies And Still Growing",
     },
     {
-      icon: 'fa-user',
-      value: '2 B',
-      label: '2 Billion Rupees Contributed To National Excequer',
+      icon: "fa-user",
+      value: "2 Billion",
+      label: "2 Billion Rupees Contributed To National Excequer",
     },
   ];
 
@@ -62,14 +60,13 @@ const Home = () => {
     infinite: false,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 0,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 3,
           infinite: true,
         },
       },
@@ -91,55 +88,26 @@ const Home = () => {
     ],
   };
 
- 
   return (
     <div>
-      <section id="homebanners">
-        {/* Banner section */}
-        <div className="container">
-          <div className="row  d-flex justify-content-start align-items-center">
-            <div className="col-lg-6 ">
-              <div className="homebanner">
-                <h1>Excellence Rooted in Trust and Commitment </h1>
-
-                <p>
-                Army Welfare Trust is raised with noble aspirations of offering supporting hands to the welfare of families of Martyrs, soldiers affected by the adversities of war & conflicts, and veterans. 
-
-                </p>
-                <div className="bannerbtns">
-                  <button type="button" className="contactsus">
-                    Contact Us
-                  </button>
-
-                  <div className="input-group">
-                    <div className="input-group-prepend">
-                      <div className="input-group-text" id="btnGroupAddon">
-                        <i class="fa fa-pause-circle-o" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                    <button className="howitworks">How It Works</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <img src={homebanner} className="img-fluid" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeaderSlider />
 
       <section className="spaceupdown">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="aboutus">
-                <span className="linesheading"> About Us</span>
-                <h2> A Promise of Resolute and Exceptional Cooperation</h2>
+                <span className="linesheading">Our Value</span>
+                <h2>A Promise of Resolute and Exceptional Cooperation</h2>
                 <p>
-               
-                We are excelling and achieving our objective with 53 years of dedicated investments in different business units, aimed at the betterment of Army Personnel and strengthening the national economy of Pakistan. At the heart of our corporation, lies a core value that emphasizes being a trusting, valuable, and effective partner. We aspire to sustain productive relationships with governments, companies, communities, and customers. 
-
+                  We are excelling and achieving our objective with 53 years of
+                  dedicated investments in different business units, aimed at
+                  the betterment of Army Personnel and strengthening the
+                  national economy of Pakistan. At the heart of our corporation,
+                  lies a core value that emphasizes being a trusting, valuable,
+                  and effective partner. We aspire to sustain productive
+                  relationships with governments, companies, communities, and
+                  customers.
                 </p>
               </div>
             </div>
@@ -147,23 +115,28 @@ const Home = () => {
         </div>
       </section>
 
+      <NewsSlider />
       <section>
         <div className="container">
           <div className="row  d-flex justify-content-start align-items-center">
             <div className="col-lg-6">
               <div className="ourmission">
-                <span className="leftlineheading"> Our Mission</span>
+                <span className="leftlineheading">Our Mission</span>
                 <h2> Supporting Our Soldiers, Empowering Our Youth</h2>
                 <p>
-                
-                At AWT, we take immense pride in serving our heroes of the nation through rehabilitation, career opportunities after retirement and long-term support for the kins of deceased army officers. Our goal is to generate maximum funds for our soldiers’ welfare. Furthermore, we strive to invest in our youth’s future by opening avenues of employment for a prosperous Pakistan. 
-
+                  At AWT, we take immense pride in serving our heroes of the
+                  nation through rehabilitation, career opportunities after
+                  retirement and long-term support for the kins of deceased army
+                  officers. Our goal is to generate maximum funds for our
+                  soldiers’ welfare. Furthermore, we strive to invest in our
+                  youth’s future by opening avenues of employment for a
+                  prosperous Pakistan.
                 </p>
               </div>
             </div>
 
             <div className="col-lg-6">
-              <img src={ourmission} className="img-fluid" />
+              <img src={ourmission} className="img-fluid" alt="" />
             </div>
           </div>
         </div>
@@ -172,18 +145,19 @@ const Home = () => {
         <div className="container">
           <div className="row  d-flex justify-content-start align-items-center">
             <div className="col-lg-6">
-              <img src={ourvisssion} className="img-fluid" />
+              <img src={ourvisssion} className="img-fluid" alt="" />
             </div>
             <div className="col-lg-6">
               <div className="ourmission leftspacee">
                 <span className="leftlineheading"> Our Vision </span>
-                <h2>
-                 
-                  Earning Confidence as a Remarkable Welfare Organization
-                </h2>
+                <h2>Earning Confidence as a Remarkable Welfare Organization</h2>
                 <p>
-                Our vision is crystal clear; AWT envisions emerging as a leading welfare trust that meets high standards, principles, and industry norms with an unshakeable commitment. While setting benchmarks for excellence, we look forward to contributing genuinely to the welfare of our soldiers and the public of Pakistan.
-
+                  Our vision is crystal clear; AWT envisions emerging as a
+                  leading welfare trust that meets high standards, principles,
+                  and industry norms with an unshakeable commitment. While
+                  setting benchmarks for excellence, we look forward to
+                  contributing genuinely to the welfare of our soldiers and the
+                  public of Pakistan.
                 </p>
               </div>
             </div>
@@ -208,13 +182,16 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-12">
               <div class="embed-responsive embed-responsive-21by9">
-
-              <iframe  
-                 class="embed-responsive-item"
-                 width="100%"
-                 height="500"
-                 allowfullscreen
-                src="https://www.youtube.com/embed/vpl1FyToXck?si=CE93UN35u-siTFA7" title="YouTube video player" frameborder="0" allow="accelerometer; " ></iframe>
+                <iframe
+                  class="embed-responsive-item"
+                  width="100%"
+                  height="500"
+                  allowfullscreen
+                  src="https://www.youtube.com/embed/vpl1FyToXck?si=CE93UN35u-siTFA7"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; "
+                ></iframe>
               </div>
             </div>
           </div>
@@ -227,19 +204,21 @@ const Home = () => {
             <div className="col-lg-1 col-md-0 col-sm-0"></div>
             <div class="col-lg-3 col-md-4 col-sm-12">
               <div className="lefttabsss">
-                <div className="tabsheadingsmove">  <span className="leftlineheading rightsss">
+                <div className="tabsheadingsmove">
                   {" "}
-                  Welfare Units{" "}
-                </span></div>
-               
+                  <span className="leftlineheading rightsss">
+                    {" "}
+                    Welfare Units{" "}
+                  </span>
+                </div>
+
                 <div
                   class="nav flex-column nav-tabs text-center"
                   id="v-tabs-tab"
                   role="tablist"
                   aria-orientation="vertical"
                 >
-
-<a
+                  <a
                     class="nav-link active"
                     id="v-tabs-home-allunits"
                     data-bs-toggle="tab"
@@ -263,7 +242,6 @@ const Home = () => {
                     <span>Public Listed Companies</span>
                     <i class="fa fa-chevron-left" aria-hidden="true"></i>{" "}
                   </a>
-
 
                   <a
                     class="nav-link"
@@ -308,8 +286,7 @@ const Home = () => {
 
             <div class="col-8 col-md-8 col-ms-12">
               <div class="tab-content" id="v-tabs-tabContent">
-
-              <div
+                <div
                   class="tab-pane fade show active"
                   id="v-tabs-allunits"
                   role="tabpanel"
@@ -319,7 +296,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5> Public Listed Companies </h5>
-                        <img src={askarigeneralinsurancecompanylimited} className="img-fluid" />
+                        <img
+                          src={askarigeneralinsurancecompanylimited}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3> Askari General Insurance Company Limited </h3>
                         <p>
                           {" "}
@@ -337,7 +318,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5> Public Listed Companies </h5>
-                        <img src={askarilifeinsurancecompanylimited} className="img-fluid" />
+                        <img
+                          src={askarilifeinsurancecompanylimited}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>Askari Life Insurance Company Limited </h3>
                         <p>
                           {" "}
@@ -354,7 +339,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5> Other Trust Units</h5>
-                        <img src={askarirealstate} className="img-fluid" />
+                        <img
+                          src={askarirealstate}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>Askari Real Estate </h3>
                         <p>
                           Askari Real Estate is transforming the lives of people
@@ -369,7 +358,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Other Trust Units</h5>
-                        <img src={bluelagoon} className="img-fluid" />
+                        <img src={bluelagoon} className="img-fluid" alt="" />
                         <h3>Blue Lagoon and Army Welfare Mess </h3>
                         <p>
                           Blue Lagoon and Army Welfare Mess has a centered
@@ -386,7 +375,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Other Trust Units</h5>
-                        <img src={askarifarmSeeds} className="img-fluid" />
+                        <img
+                          src={askarifarmSeeds}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>Askari Farms and Seeds </h3>
                         <p>
                           Askari Farms and Seeds is the first economic venture
@@ -402,7 +395,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Other Trust Units</h5>
-                        <img src={askarifuel} className="img-fluid" />
+                        <img src={askarifuel} className="img-fluid" alt="" />
                         <h3>Askari Fuels</h3>
                         <p>
                           Askari Fuels has become a giant system comprising 30
@@ -418,7 +411,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Other Trust Units</h5>
-                        <img src={armywelfaresugarmills} className="img-fluid" />
+                        <img
+                          src={armywelfaresugarmills}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>Army Welfare Sugar Mills</h3>
                         <p>
                           Army Welfare Sugar Mills is one of the premier sugar
@@ -435,7 +432,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Other Trust Units</h5>
-                        <img src={askariwoolenmills} className="img-fluid" />
+                        <img
+                          src={askariwoolenmills}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3> Askari Woolen Mills</h3>
                         <p>
                           Askari Woolen Mills is renowned for being the greatest
@@ -451,7 +452,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Other Trust Units</h5>
-                        <img src={askarishoes} className="img-fluid" />
+                        <img src={askarishoes} className="img-fluid" alt="" />
                         <h3> Askari Shoes</h3>
                         <p>
                           Askari Shoes manufactures strong and durable DNS boots
@@ -464,10 +465,10 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                     <div>
+                    <div>
                       <div className="unitmain-box">
                         <h5> Public Unlisted Companies</h5>
-                        <img src={malpaklimited} className="img-fluid" />
+                        <img src={malpaklimited} className="img-fluid" alt="" />
                         <h3> Mal Pakistan Limited </h3>
                         <p>
                           {" "}
@@ -485,7 +486,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Public Unlisted Companies</h5>
-                        <img src={aWTinvestmentslimited} className="img-fluid" />
+                        <img
+                          src={aWTinvestmentslimited}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>
                           AWT Investments Limited (Non-Banking Finance Company){" "}
                         </h3>
@@ -504,7 +509,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5> Private Limited Companies</h5>
-                        <img src={askariaviation} className="img-fluid" />
+                        <img
+                          src={askariaviation}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>Askari Aviation </h3>
                         <p>
                           Askari Aviation has prominence in the industry as a
@@ -520,7 +529,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Private Limited Companies</h5>
-                        <img src={askariguards} className="img-fluid" />
+                        <img src={askariguards} className="img-fluid" alt="" />
                         <h3>Askari Guards Private Limited </h3>
                         <p>
                           {" "}
@@ -538,7 +547,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Private Limited Companies</h5>
-                        <img src={medask} className="img-fluid" />
+                        <img src={medask} className="img-fluid" alt="" />
                         <h3>MedAsk </h3>
                         <p>
                           MedAsk by Pakistan Army is the leading healthcare
@@ -554,7 +563,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Private Limited Companies</h5>
-                        <img src={askarienterprise} className="img-fluid" />
+                        <img
+                          src={askarienterprise}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>Askari Enterprises Pvt Ltd</h3>
                         <p>
                           Askari Enterprises Private Limited is a special unit
@@ -571,7 +584,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Private Limited Companies</h5>
-                        <img src={faujisecurity} className="img-fluid" />
+                        <img src={faujisecurity} className="img-fluid" alt="" />
                         <h3>Fauji Security Services Pvt Ltd</h3>
                         <p>
                           Fauji Security Services Private Limited has the best
@@ -587,7 +600,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Private Limited Companies</h5>
-                        <img src={askaridevelopment} className="img-fluid" />
+                        <img
+                          src={askaridevelopment}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3> Askari Development Holdings Pvt Ltd</h3>
                         <p>
                           Askari Development Holdings Private Limited is a 100%
@@ -603,7 +620,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Private Limited Companies</h5>
-                        <img src={jolidays} className="img-fluid" />
+                        <img src={jolidays} className="img-fluid" alt="" />
                         <h3> Jolidays</h3>
                         <p>
                           Jolidays is dedicated to providing quality travel
@@ -628,7 +645,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5> Public Listed Companies </h5>
-                        <img src={askarigeneralinsurancecompanylimited} className="img-fluid" />
+                        <img
+                          src={askarigeneralinsurancecompanylimited}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3> Askari General Insurance Company Limited </h3>
                         <p>
                           {" "}
@@ -646,7 +667,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5> Public Listed Companies </h5>
-                        <img src={askarilifeinsurancecompanylimited} className="img-fluid" />
+                        <img
+                          src={askarilifeinsurancecompanylimited}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>Askari Life Insurance Company Limited </h3>
                         <p>
                           {" "}
@@ -660,16 +685,8 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    
-                   
                   </Slider>
                 </div>
-
-
-
-
-
-
 
                 <div
                   class="tab-pane fade"
@@ -681,7 +698,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5> Public Unlisted Companies</h5>
-                        <img src={malpaklimited} className="img-fluid" />
+                        <img src={malpaklimited} className="img-fluid" alt="" />
                         <h3> Mal Pakistan Limited </h3>
                         <p>
                           {" "}
@@ -699,7 +716,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Public Unlisted Companies</h5>
-                        <img src={aWTinvestmentslimited} className="img-fluid" />
+                        <img
+                          src={aWTinvestmentslimited}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>
                           AWT Investments Limited (Non-Banking Finance Company){" "}
                         </h3>
@@ -715,8 +736,6 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    
-                   
                   </Slider>
                 </div>
                 <div
@@ -729,7 +748,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5> Private Limited Companies</h5>
-                        <img src={askariaviation} className="img-fluid" />
+                        <img
+                          src={askariaviation}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>Askari Aviation </h3>
                         <p>
                           Askari Aviation has prominence in the industry as a
@@ -745,7 +768,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Private Limited Companies</h5>
-                        <img src={askariguards} className="img-fluid" />
+                        <img src={askariguards} className="img-fluid" alt="" />
                         <h3>Askari Guards Private Limited </h3>
                         <p>
                           {" "}
@@ -763,7 +786,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Private Limited Companies</h5>
-                        <img src={medask} className="img-fluid" />
+                        <img src={medask} className="img-fluid" alt="" />
                         <h3>MedAsk </h3>
                         <p>
                           MedAsk by Pakistan Army is the leading healthcare
@@ -779,7 +802,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Private Limited Companies</h5>
-                        <img src={askarienterprise} className="img-fluid" />
+                        <img
+                          src={askarienterprise}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>Askari Enterprises Pvt Ltd</h3>
                         <p>
                           Askari Enterprises Private Limited is a special unit
@@ -796,7 +823,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Private Limited Companies</h5>
-                        <img src={faujisecurity} className="img-fluid" />
+                        <img src={faujisecurity} className="img-fluid" alt="" />
                         <h3>Fauji Security Services Pvt Ltd</h3>
                         <p>
                           Fauji Security Services Private Limited has the best
@@ -812,7 +839,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Private Limited Companies</h5>
-                        <img src={askaridevelopment} className="img-fluid" />
+                        <img
+                          src={askaridevelopment}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3> Askari Development Holdings Pvt Ltd</h3>
                         <p>
                           Askari Development Holdings Private Limited is a 100%
@@ -828,7 +859,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Private Limited Companies</h5>
-                        <img src={jolidays} className="img-fluid" />
+                        <img src={jolidays} className="img-fluid" alt="" />
                         <h3> Jolidays</h3>
                         <p>
                           Jolidays is dedicated to providing quality travel
@@ -851,10 +882,14 @@ const Home = () => {
                   aria-labelledby="v-tabs-trust-unit"
                 >
                   <Slider {...settings}>
-                    <div>
+                    <div style={{ height: "100%" }}>
                       <div className="unitmain-box">
                         <h5> Other Trust Units</h5>
-                        <img src={askarirealstate} className="img-fluid" />
+                        <img
+                          src={askarirealstate}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>Askari Real Estate </h3>
                         <p>
                           Askari Real Estate is transforming the lives of people
@@ -869,7 +904,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Other Trust Units</h5>
-                        <img src={bluelagoon} className="img-fluid" />
+                        <img src={bluelagoon} className="img-fluid" alt="" />
                         <h3>Blue Lagoon and Army Welfare Mess </h3>
                         <p>
                           Blue Lagoon and Army Welfare Mess has a centered
@@ -886,7 +921,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Other Trust Units</h5>
-                        <img src={askarifarmSeeds} className="img-fluid" />
+                        <img
+                          src={askarifarmSeeds}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>Askari Farms and Seeds </h3>
                         <p>
                           Askari Farms and Seeds is the first economic venture
@@ -902,7 +941,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Other Trust Units</h5>
-                        <img src={askarifuel} className="img-fluid" />
+                        <img src={askarifuel} className="img-fluid" alt="" />
                         <h3>Askari Fuels</h3>
                         <p>
                           Askari Fuels has become a giant system comprising 30
@@ -918,7 +957,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Other Trust Units</h5>
-                        <img src={armywelfaresugarmills} className="img-fluid" />
+                        <img
+                          src={armywelfaresugarmills}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3>Army Welfare Sugar Mills</h3>
                         <p>
                           Army Welfare Sugar Mills is one of the premier sugar
@@ -935,7 +978,11 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Other Trust Units</h5>
-                        <img src={askariwoolenmills} className="img-fluid" />
+                        <img
+                          src={askariwoolenmills}
+                          className="img-fluid"
+                          alt=""
+                        />
                         <h3> Askari Woolen Mills</h3>
                         <p>
                           Askari Woolen Mills is renowned for being the greatest
@@ -951,7 +998,7 @@ const Home = () => {
                     <div>
                       <div className="unitmain-box">
                         <h5>Other Trust Units</h5>
-                        <img src={askarishoes} className="img-fluid" />
+                        <img src={askarishoes} className="img-fluid" alt="" />
                         <h3> Askari Shoes</h3>
                         <p>
                           Askari Shoes manufactures strong and durable DNS boots
@@ -983,12 +1030,10 @@ const Home = () => {
                   Needs
                 </h2>
                 <p>
-                  
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Suspendisse varius enim in eros Lorem ipsum dolor .Lorem ipsum
                   dolor sit amet, consectetur adipiscing elit. Suspendisse
                   varius enim in eros Lorem ipsum dolor .
-                  
                 </p>
               </div>
             </div>
@@ -996,24 +1041,21 @@ const Home = () => {
         </div>
       </section>
 
-
-<section>
-
-<div className="container">
-  <div className="row">
-    <div className="col-lg-12">
-    <div className="container">
-      <div className="row">
-        {counters.map((counter, index) => (
-          <CounterBox key={index} {...counter} />
-        ))}
-      </div>
-    </div>
-    </div>
-  </div>
-</div>
-
-</section>
+      <section className="mb-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="container">
+                <div className="row">
+                  {counters.map((counter, index) => (
+                    <CounterBox key={index} {...counter} />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* <section >
         <div className="container">
           <div className="row spacepadding ">
@@ -1118,8 +1160,7 @@ const Home = () => {
         </div>
       </section> */}
 
-
-     <section className="spaceupdown">
+      {/* <section className="spaceupdown">
         <div className="container">
           <div className="row">
             <div className="col-lg-9">
@@ -1154,28 +1195,25 @@ const Home = () => {
               <div className="image">
                 <img src={ournew1} alt="" className="rounded " />
                 <div class="overlay">
-                
                   <h3> AWM Dyeing & Garments Fabrication Facility</h3>
                 </div>
               </div>
               <div class="image">
                 <img src={ournew2} alt="" class="rounded " />
                 <div class="overlay">
-               
                   <h3> AWM Dyeing & Garments Fabrication Facility</h3>
                 </div>
               </div>
               <div class="image">
                 <img src={ournew3} alt="" class="rounded " />
                 <div class="overlay">
-                
                   <h3> AWM Dyeing & Garments Fabrication Facility</h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

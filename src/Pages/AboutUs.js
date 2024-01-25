@@ -13,31 +13,30 @@ import trust3 from "../assets/contactus/trust3.png";
 import trust4 from "../assets/contactus/trust4.png";
 import trust5 from "../assets/contactus/trsut5.png";
 import trsut6 from "../assets/contactus/trust6.png";
-import CounterBox  from "../Components/CounterBox.js";
+import CounterBox from "../Components/CounterBox.js";
 import Slider from "react-slick";
 const AboutUs = () => {
-
   const counters = [
     {
-      icon: 'fa-thumbs-o-up',
-      value: '4 B ',
-      label: 'Well Above 40 Billion Rupees Worth company ',
+      icon: "fa-thumbs-o-up",
+      value: "4 B ",
+      label: "Well Above 40 Billion Rupees Worth company ",
       colored: true,
     },
     {
-      icon: 'fa-group',
-      value: '28000',
-      label: 'Providing 28000 Direct & Indirect Employments',
+      icon: "fa-group",
+      value: "28000",
+      label: "Providing 28000 Direct & Indirect Employments",
     },
     {
-      icon: 'fa-shopping-cart',
-      value: '20',
-      label: '20 Companies And Still Growing',
+      icon: "fa-shopping-cart",
+      value: "20",
+      label: "20 Companies And Still Growing",
     },
     {
-      icon: 'fa-user',
-      value: '2 B',
-      label: '2 Billion Rupees Contributed To National Excequer',
+      icon: "fa-user",
+      value: "2 B",
+      label: "2 Billion Rupees Contributed To National Excequer",
     },
   ];
   const settings = {
@@ -48,8 +47,6 @@ const AboutUs = () => {
   };
 
   var settingsllogo = {
-
-
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -57,7 +54,7 @@ const AboutUs = () => {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
- 
+
     responsive: [
       {
         breakpoint: 1024,
@@ -65,36 +62,34 @@ const AboutUs = () => {
           slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
-        
-        }
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div>
- <section className="commonbg">
+      <section className="commonbg">
         <div className="container">
           <div class="row">
             <div class="col-lg-12 text-center">
               <div className="aboutuspage">
                 <h1>
-               
-                  About  <span>Us </span>
+                  About <span>Us </span>
                 </h1>
 
                 <h5>
@@ -105,8 +100,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
-    
 
       <section className="aboutusbox">
         <div className="container">
@@ -184,7 +177,7 @@ const AboutUs = () => {
         </div>
       </section> */}
 
-{/* <section>
+      {/* <section>
 
 <div className="container">
   <div className="row">
@@ -289,9 +282,10 @@ const AboutUs = () => {
       <section className="yeasrbrands">
         <div className="container">
           <div className="row">
-           
-            <div className=" col-lg-12  tabssliders">
-              <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+            {/*  */}
+            <div className="col-lg-12 tabssliders d-lg-flex flex-row-reverse">
+              {/*  */}
+              <ul class="nav col-lg-4 nav-tabs mb-3" id="ex1" role="tablist">
                 <li class="nav-item" role="presentation">
                   <a
                     class="nav-link active"
@@ -461,11 +455,10 @@ const AboutUs = () => {
                   >
                     {" "}
                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                    2017 
+                    2017
                   </a>
                 </li>
 
-                
                 <li class="nav-item" role="presentation">
                   <a
                     class="nav-link"
@@ -478,7 +471,7 @@ const AboutUs = () => {
                   >
                     {" "}
                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                    2018  
+                    2018
                   </a>
                 </li>
 
@@ -494,12 +487,12 @@ const AboutUs = () => {
                   >
                     {" "}
                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                    2020  
+                    2020
                   </a>
                 </li>
               </ul>
-
-              <div class="tab-content" id="ex1-content">
+              {/* */}
+              <div class="tab-content  col-lg-8" id="ex1-content">
                 <div
                   class="tab-pane fade show active"
                   id="ex1-tabs-1"
@@ -521,7 +514,6 @@ const AboutUs = () => {
                         </p>
                       </div>
                     </div>
-                    
                   </Slider>
                 </div>
                 <div
@@ -637,35 +629,34 @@ const AboutUs = () => {
                   role="tabpanel"
                   aria-labelledby="ex1-tab-6"
                 >
-                    <Slider {...settings}>
+                  <Slider {...settings}>
                     <div>
                       <div className="mainoutertabsscontent">
                         <div className="headingwithyear">
                           <h3> Askari Aviation</h3>
-                          <h5> 1995  </h5>
+                          <h5> 1995 </h5>
                         </div>
                         <p>
-                        Askari Aviation has prominence in the industry as a leader. They are rendering quality services and are popularly known for their devotion and excellence.
-
+                          Askari Aviation has prominence in the industry as a
+                          leader. They are rendering quality services and are
+                          popularly known for their devotion and excellence.
                         </p>
                       </div>
                     </div>
                     <div>
                       <div className="mainoutertabsscontent">
                         <div className="headingwithyear">
-                          <h3>Askari General Insurance Company Limited
-</h3>
-                          <h5> 1995
- </h5>
+                          <h3>Askari General Insurance Company Limited</h3>
+                          <h5> 1995</h5>
                         </div>
                         <p>
-                        Ranked among the top ten Pakistan insurers in terms of gross premium, Askari General Insurance Company Limited holds a position in the local insurance industry as a reliable and loyal partner. 
-
+                          Ranked among the top ten Pakistan insurers in terms of
+                          gross premium, Askari General Insurance Company
+                          Limited holds a position in the local insurance
+                          industry as a reliable and loyal partner.
                         </p>
                       </div>
                     </div>
-                   
-                  
                   </Slider>
                 </div>
 
@@ -675,37 +666,39 @@ const AboutUs = () => {
                   role="tabpanel"
                   aria-labelledby="ex1-tab-7"
                 >
-                   <Slider {...settings}>
+                  <Slider {...settings}>
                     <div>
                       <div className="mainoutertabsscontent">
                         <div className="headingwithyear">
-                          <h3> Askari Guards Private Limited
-</h3>
+                          <h3> Askari Guards Private Limited</h3>
                           <h5> 1996 </h5>
                         </div>
                         <p>
-                        Askari Guards Private Limited is rising as a well-recognized provider of guarding services throughout Pakistan and offering holistic security to both national and international companies. 
-
+                          Askari Guards Private Limited is rising as a
+                          well-recognized provider of guarding services
+                          throughout Pakistan and offering holistic security to
+                          both national and international companies.
                         </p>
                       </div>
                     </div>
                     <div>
                       <div className="mainoutertabsscontent">
                         <div className="headingwithyear">
-                          <h3> Mal Pakistan Limited (Mobil Askari Lubricants Pakistan Ltd.)
-
-</h3>
-                          <h5> 1996
- </h5>
+                          <h3>
+                            {" "}
+                            Mal Pakistan Limited (Mobil Askari Lubricants
+                            Pakistan Ltd.)
+                          </h3>
+                          <h5> 1996</h5>
                         </div>
                         <p>
-                        Mal Pakistan Limited is a state-of-the-art oil lubricant company established by a strategic partnership with the Largest oil company Mobil Lubricants.
-
+                          Mal Pakistan Limited is a state-of-the-art oil
+                          lubricant company established by a strategic
+                          partnership with the Largest oil company Mobil
+                          Lubricants.
                         </p>
                       </div>
                     </div>
-                   
-                  
                   </Slider>
                 </div>
                 <div
@@ -714,25 +707,19 @@ const AboutUs = () => {
                   role="tabpanel"
                   aria-labelledby="ex1-tab-8"
                 >
-                   <Slider {...settings}>
+                  <Slider {...settings}>
                     <div>
                       <div className="mainoutertabsscontent">
                         <div className="headingwithyear">
-                          <h3> Askari Fuels 
-
-</h3>
-                          <h5> 2002 
- </h5>
+                          <h3> Askari Fuels</h3>
+                          <h5> 2002</h5>
                         </div>
                         <p>
-                        Askari Fuels has become a giant system comprising 30 CNG stations spanning all over Pakistan. 
-
+                          Askari Fuels has become a giant system comprising 30
+                          CNG stations spanning all over Pakistan.
                         </p>
                       </div>
                     </div>
-                    
-                   
-                  
                   </Slider>
                 </div>
 
@@ -746,22 +733,16 @@ const AboutUs = () => {
                     <div>
                       <div className="mainoutertabsscontent">
                         <div className="headingwithyear">
-                          <h3> Askari Enterprises Pvt Ltd 
-
-
-</h3>
-                          <h5> 2009  
- </h5>
+                          <h3> Askari Enterprises Pvt Ltd</h3>
+                          <h5> 2009</h5>
                         </div>
                         <p>
-                        Askari Enterprises Private Limited is a special unit responsible for the distribution of weapons, ammunition, vehicles, and additional equipment.
-
+                          Askari Enterprises Private Limited is a special unit
+                          responsible for the distribution of weapons,
+                          ammunition, vehicles, and additional equipment.
                         </p>
                       </div>
                     </div>
-                    
-                   
-                  
                   </Slider>
                 </div>
 
@@ -775,23 +756,15 @@ const AboutUs = () => {
                     <div>
                       <div className="mainoutertabsscontent">
                         <div className="headingwithyear">
-                          <h3> Fauji Security Services Pvt Ltd 
-
-
-
-</h3>
-                          <h5> 2014  
- </h5>
+                          <h3> Fauji Security Services Pvt Ltd</h3>
+                          <h5> 2014</h5>
                         </div>
                         <p>
-                        Fauji Security Services Private Limited has the best reputation as a security company in Pakistan. 
-
+                          Fauji Security Services Private Limited has the best
+                          reputation as a security company in Pakistan.
                         </p>
                       </div>
                     </div>
-                    
-                   
-                  
                   </Slider>
                 </div>
 
@@ -805,24 +778,15 @@ const AboutUs = () => {
                     <div>
                       <div className="mainoutertabsscontent">
                         <div className="headingwithyear">
-                          <h3> Askari Development Holdings Private Limited
-
-
-
-
-</h3>
-                          <h5> 2015  
- </h5>
+                          <h3> Askari Development Holdings Private Limited</h3>
+                          <h5> 2015</h5>
                         </div>
                         <p>
-                        Askari Development Holdings Private Limited is a 100% owned business unit of AWT. 
-
+                          Askari Development Holdings Private Limited is a 100%
+                          owned business unit of AWT.
                         </p>
                       </div>
                     </div>
-                    
-                   
-                  
                   </Slider>
                 </div>
 
@@ -836,19 +800,17 @@ const AboutUs = () => {
                     <div>
                       <div className="mainoutertabsscontent">
                         <div className="headingwithyear">
-                          <h3> AWT Investments Limited (Non-Banking Finance Company)
-
-
-
-
-
-</h3>
-                          <h5> 2017
- </h5>
+                          <h3>
+                            {" "}
+                            AWT Investments Limited (Non-Banking Finance
+                            Company)
+                          </h3>
+                          <h5> 2017</h5>
                         </div>
                         <p>
-                        Licensed by the Securities and Exchange Commission of Pakistan, AWT Investments Limited oversees the management of open and closed-end funds.
-
+                          Licensed by the Securities and Exchange Commission of
+                          Pakistan, AWT Investments Limited oversees the
+                          management of open and closed-end funds.
                         </p>
                       </div>
                     </div>
@@ -856,25 +818,16 @@ const AboutUs = () => {
                     <div>
                       <div className="mainoutertabsscontent">
                         <div className="headingwithyear">
-                          <h3> Medask
-
-
-
-
-
-</h3>
-                          <h5> 2017
- </h5>
+                          <h3> Medask</h3>
+                          <h5> 2017</h5>
                         </div>
                         <p>
-                        MedAsk by Pakistan Army is the leading healthcare provider serving its Army personnel and their families.
-
+                          MedAsk by Pakistan Army is the leading healthcare
+                          provider serving its Army personnel and their
+                          families.
                         </p>
                       </div>
                     </div>
-                    
-                   
-                  
                   </Slider>
                 </div>
 
@@ -888,25 +841,16 @@ const AboutUs = () => {
                     <div>
                       <div className="mainoutertabsscontent">
                         <div className="headingwithyear">
-                          <h3> Askari Life Insurance Company Limited
-
-
-
-
-
-</h3>
-                          <h5> 2018   
- </h5>
+                          <h3> Askari Life Insurance Company Limited</h3>
+                          <h5> 2018</h5>
                         </div>
                         <p>
-                        Askari Life Insurance Company Limited has a current capital of Rs. 750 million. Their shares are publicly listed on the Pakistan Stock Exchange. 
-
+                          Askari Life Insurance Company Limited has a current
+                          capital of Rs. 750 million. Their shares are publicly
+                          listed on the Pakistan Stock Exchange.
                         </p>
                       </div>
                     </div>
-                    
-                   
-                  
                   </Slider>
                 </div>
 
@@ -920,25 +864,16 @@ const AboutUs = () => {
                     <div>
                       <div className="mainoutertabsscontent">
                         <div className="headingwithyear">
-                          <h3> Jolidays
-
-
-
-
-
-</h3>
-                          <h5> 2020   
- </h5>
+                          <h3> Jolidays</h3>
+                          <h5> 2020</h5>
                         </div>
                         <p>
-                        Jolidays is dedicated to providing quality travel arrangements to its clients that make their experience a true value for money. 
-
+                          Jolidays is dedicated to providing quality travel
+                          arrangements to its clients that make their experience
+                          a true value for money.
                         </p>
                       </div>
                     </div>
-                    
-                   
-                  
                   </Slider>
                 </div>
               </div>
@@ -957,12 +892,14 @@ const AboutUs = () => {
                   From healthcare initiatives to sustainable development
                   projects, the Army Welfare Trust accomplished significant
                   milestones. 2022 proved to be a year of impressive advancement
-                  for the Army Welfare Trust. 
+                  for the Army Welfare Trust.
                 </p>
 
-                <p> Get a complete picture of the
-                  events from our Corporate Profile 2022. Enter your email
-                  address to download it now!</p>
+                <p>
+                  {" "}
+                  Get a complete picture of the events from our Corporate
+                  Profile 2022. Enter your email address to download it now!
+                </p>
               </div>
             </div>
           </div>
@@ -992,76 +929,133 @@ const AboutUs = () => {
 
       <section className="spaceupdowngray">
         <div className="container-fluid overflow-hidden no-gutters p-0">
-  <div className="row">
-  <Slider {...settingsllogo }>
-    
-    <div>
-      <div className="trsutimages">    <img src={trust1} className="img-fluid" />  </div>
-        
+          <div className="row">
+            <Slider {...settingsllogo}>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust1} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust2} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust3} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust4} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trsut6} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust5} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust2} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust1} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust4} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust5} className="img-fluid" />{" "}
+                </div>
+              </div>
+
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trsut6} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust3} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust3} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust4} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust5} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust3} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust2} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust1} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust4} className="img-fluid" />{" "}
+                </div>
+              </div>
+              <div>
+                <div className="trsutimages">
+                  {" "}
+                  <img src={trust5} className="img-fluid" />{" "}
+                </div>
+              </div>
+            </Slider>
           </div>
-          <div>
-          <div className="trsutimages">       <img src={trust2} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">       <img src={trust3} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">       <img src={trust4} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">        <img src={trsut6} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">      <img src={trust5} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">         <img src={trust2} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">         <img src={trust1} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">          <img src={trust4} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">        <img src={trust5} className="img-fluid" /> </div>
-          </div>
-   
-          <div>
-          <div className="trsutimages">           <img src={trsut6} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">        <img src={trust3} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">         <img src={trust3} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">        <img src={trust4} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">         <img src={trust5} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">      <img src={trust3} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">           <img src={trust2} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">     <img src={trust1} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">      <img src={trust4} className="img-fluid" /> </div>
-          </div>
-          <div>
-          <div className="trsutimages">  <img src={trust5} className="img-fluid" /> </div>
-          </div>
-        
-        </Slider>
-    </div>
-</div>
-    </section>
+        </div>
+      </section>
     </div>
   );
 };
