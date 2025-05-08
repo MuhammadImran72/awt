@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.60b5dba4.css",
+    "main.js": "/static/js/main.34f1c08c.js",
+    "static/media/Bod.png": "/static/media/Bod.da9a8fbe800a3648db54.png",
+    "static/media/committee-of-administration.png": "/static/media/committee-of-administration.2a134de1129fc31eda9f.png",
+    "static/media/MD-messsage.png": "/static/media/MD-messsage.2664315ce535c472678f.png",
+    "static/media/contact-us.png": "/static/media/contact-us.4c72136795366a3aa6ec.png",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/world-map.png": "/static/media/world-map.7fe68d52cf5d4e0a1c8f.png",
+    "static/media/News.jpg": "/static/media/News.6cf2115ad2558f1eaaea.jpg",
+    "static/media/Contact Us.jpg": "/static/media/Contact Us.b2a49eeba5e3ec63a035.jpg",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/Media.jpg": "/static/media/Media.cf9281f6946eebd47b3f.jpg",
+    "static/media/commonbgpage.png": "/static/media/commonbgpage.a2e2a3012bf906b6e56a.png",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/Careers.jpg": "/static/media/Careers.e1431fba3db79d6b73fe.jpg",
+    "static/media/About-Us.jpg": "/static/media/About-Us.582a89d036d4d5f4bd56.jpg",
+    "static/media/9.png": "/static/media/9.c9fcd2b4d238a3482b10.png",
+    "static/media/14.png": "/static/media/14.d00a198f2284b95a2d48.png",
+    "static/media/3.png": "/static/media/3.ae9dccbedbd4c5d47467.png",
+    "static/media/13.png": "/static/media/13.722f84a019b6000e1cf8.png",
+    "static/media/17.png": "/static/media/17.8183ec1827384c8da8ed.png",
+    "static/media/15.png": "/static/media/15.89d12e449cd98d500153.png",
+    "static/media/6.png": "/static/media/6.b9155cba917f49dd61cb.png",
+    "static/media/footerlogonew.png": "/static/media/footerlogonew.2e5340fa4cbbff97f0d0.png",
+    "static/media/lg.svg?io9a6k": "/static/media/lg.09cd8e9be7081f216644.svg",
+    "static/media/10.png": "/static/media/10.709846f731834d2d438a.png",
+    "static/media/8.png": "/static/media/8.f861c338b02e191e8d43.png",
+    "static/media/lg.woff?io9a6k": "/static/media/lg.356a0e9cb064c7a196c6.woff",
+    "static/media/lg.ttf?io9a6k": "/static/media/lg.747d038541bfc6bb8ea9.ttf",
+    "static/media/lg.woff2?io9a6k": "/static/media/lg.64b800aa30714fd916dc.woff2",
+    "index.html": "/index.html",
+    "main.60b5dba4.css.map": "/static/css/main.60b5dba4.css.map",
+    "main.34f1c08c.js.map": "/static/js/main.34f1c08c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60b5dba4.css",
+    "static/js/main.34f1c08c.js"
+  ]
+}
